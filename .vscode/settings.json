@@ -1,3 +1,4 @@
 {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnPaste": false
 }
