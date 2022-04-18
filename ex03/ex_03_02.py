@@ -8,15 +8,15 @@
 # Error, please enter numeric input
 
 try:
-    hrs = float(input('Enter Hours: '))
+    hrs = float(input("Enter Hours: "))
 except:
-    print('Error, please enter numeric input')
+    print("Error: Please enter numeric input")
     quit()
 
 try:
-    rph = float(input('Enter Rate: '))
+    rph = float(input("Enter Rate: "))
 except:
-    print('Error, please enter numeric input')
+    print("Error: Please enter numeric input")
     quit()
 
 if hrs > 40:
@@ -24,4 +24,4 @@ if hrs > 40:
 else:
     pay = round(hrs * rph, 2)
 
-print('Pay:', pay)
+print("Pay:", pay)
