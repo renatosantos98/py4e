@@ -2,5 +2,5 @@
 
 hrs = float(input('Enter Hours: '))
 rph = float(input('Enter Rate: '))
-pay = round(hrs * rph,2)
-print('Pay:',pay)
+pay = round(hrs * rph, 2)
+print('Pay:', pay)
