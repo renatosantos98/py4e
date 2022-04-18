@@ -3,7 +3,7 @@
 hrs = float(input('Enter Hours: '))
 rph = float(input('Enter Rate: '))
 if hrs > 40:
-    pay = round(40 * rph + (hrs - 40) * rph * 1.5,2)
+    pay = round(40 * rph + (hrs - 40) * rph * 1.5, 2)
 else:
-    pay = round(hrs * rph,2)
-print('Pay:',pay)
+    pay = round(hrs * rph, 2)
+print('Pay:', pay)
