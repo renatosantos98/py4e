@@ -6,7 +6,7 @@ def computepay(hrs, rph):
         hrs = float(hrs)
         rph = float(rph)
     except:
-        print("Error, please enter numeric input")
+        print("Error: Please enter a numeric input.")
         quit()
     else:
         if hrs > 40:
