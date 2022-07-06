@@ -50,8 +50,19 @@ while True:
 
     print(json.dumps(js, indent=4))
 
-    lat = js["results"][0]["geometry"]["location"]["lat"]
-    lng = js["results"][0]["geometry"]["location"]["lng"]
-    print("lat", lat, "lng", lng)
-    location = js["results"][0]["formatted_address"]
-    print(location)
+    # lat = js["results"][0]["geometry"]["location"]["lat"]
+    # lng = js["results"][0]["geometry"]["location"]["lng"]
+    # print("lat", lat, "lng", lng)
+    # location = js["results"][0]["formatted_address"]
+    # print(location)
+
+    try:
+        country_code = js["results"][0]["address_components"][-1]["short_name"]
+        location_type = js["results"][0]["address_components"][-1]["types"]
+        # [-1] to give the last element in the dictionary list
+        if "country" not in location_type:
+            print("This location is not in a valid country.")
+        else:
+            print("Country Code: ", country_code)
+    except:
+        print("No valid country code.")
